@@ -25,8 +25,8 @@ header {
     justify-content: center;
     padding: .5%;
     gap: 18.5%;
-}
-
+    }
+    
 header a {
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -52,12 +52,11 @@ nav .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Kolgimba';
     letter-spacing: .1rem;
     padding: 0;
 }
-
 
 nav .menu {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -71,6 +70,7 @@ nav .menu ul {
 
 nav .menu li {
     list-style: none;
+    margin-top: -5%;
 }
 
 nav .menu li a {
@@ -86,93 +86,11 @@ nav .menu li a:hover {
 
 .conteudo {
     padding: 5%;
+    padding-top: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: antiquewhite;
-}
-
-@media (max-width: 1000px) {
-
-    header {
-        gap: 10%;
-    }
-
-    header a {
-        font-size: .7rem;
-    }
-
-    nav {
-        padding: 8%;
-        align-items: center;
-        display: flex;
-    }
-
-    nav .logo h1 {
-        font-size: .9rem;
-    }
-
-    nav .menu ul {
-        gap: 5px;
-        align-items: center;
-    }
-
-    nav .menu li a {
-        font-size: .7rem;
-    }
-
-    .conteudo {
-        flex-direction: column;
-    }
-
-    aside {
-        min-width: 100%;
-    }
-
-    .atendimento ul {
-        flex-direction: column;
-    }
-
-    .atendimento li {
-        margin-top: 10%;
-        min-width: 300px;
-        min-height: 300px;
-    }
-
-    .sobre {
-        flex-direction: column;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
-    .sobre article {
-        min-width: 100%;
-    }
-
-    .contato {
-        flex-direction: column;
-        max-width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .contato aside p {
-        max-width: 100%;
-        padding: 0;
-    }
-
-    .container {
-        max-width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 0;
-    }
-
-    footer p {
-        font-size: .8rem;
-    }
-
 }
 
 aside {
@@ -349,15 +267,6 @@ article img:hover {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.contato {
-    background-color: antiquewhite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2%;
-    padding-left: 20%;
-    padding-right: 20%;
-}
 
 .titulo1 {
     color: antiquewhite;
@@ -365,6 +274,14 @@ article img:hover {
     text-align: center;
     padding: 2%;
     font-size: 1.4rem;
+    }
+    
+.contato {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
 }
 
 .contato h1 {
@@ -377,28 +294,42 @@ article img:hover {
 }
 
 .contato aside ul {
-    padding: 5%;
+    margin-top: 10%;
     display: flex;
+    text-align: center;
+    max-width: 100%;
+    text-align: center;
 }
 
 .contato aside li {
     list-style: none;
+    gap: 15%;
     display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-    margin-top: 7%;
-
+    max-width: 100%;
+}
+    
+.telefone {
+    font-size: 10rem;
+    color: hsl(0, 0%, 0%, .1);
 }
 
 .contato aside a {
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: darkslategray;
 }
 
+.contato aside a:hover {
+    color: black;
+    transition: all .3s ease-in-out;
+}
+
 .container {
-    padding: 5%;
+    padding: 15%;
+    padding-top: 0%;
+    padding-bottom: 5%;
+    background-color: antiquewhite;
 }
 
 .perguntas h2 {
@@ -474,4 +405,140 @@ footer {
     text-align: center;
     padding: .3%;
     color: antiquewhite;
+}
+
+@media (max-width: 1000px) {
+
+    body {
+        background-size: 400%;
+    }
+
+    header {
+        gap: 5%;
+    }
+
+    header a {
+        font-size: .7rem;
+    }
+
+    nav {
+        padding-top: 8%;
+        align-items: center;
+        display: flex;
+    }
+
+    nav .logo {
+        font-size: 1.3rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        gap: 5px;
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    nav .menu li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -5%;
+    }
+
+    nav .menu li a {
+        font-size: .75rem;
+    }
+
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .conteudo article {
+        padding: 5%;
+    }
+
+    .conteudo article img {
+        max-width: 100%;
+        height: 450px;
+    }
+
+    aside {
+        min-width: 100%;
+    }
+    
+    .atendimento ul {
+        flex-direction: column;
+    }
+
+    .atendimento li {
+        margin-top: 10%;
+        max-width: 300px;
+        max-height: 400px;
+
+    }
+
+    .sobre {
+        flex-direction: column;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .sobre article {
+        min-width: 100%;
+    }
+
+    .contato {
+        flex-direction: column;
+        max-width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .contato aside p {
+        min-width: 100%;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    .contato aside ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato aside li {
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contato aside li a {
+        font-size: 2.3rem;
+    }
+
+    .container {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+        padding: 5%;
+    }
+
+    .contato li a p {
+        display: none;
+    }
+
+    .telefone {
+        display: none;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
+
 }
