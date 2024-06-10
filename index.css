@@ -419,6 +419,11 @@ footer {
 
 @media (max-width: 1000px) {
 
+    html {
+        scroll-behavior: smooth;
+        scroll-padding: var(--scroll-padding, 6rem);
+    }
+
     body {
         background-size: 400%;
     }
@@ -463,6 +468,7 @@ footer {
 
     .conteudo {
         flex-direction: column;
+        padding-top: 25%;
     }
 
     .conteudo article {
