@@ -547,6 +547,7 @@ footer {
         flex-direction: column;
         gap: 0;
         padding: 5%;
+        padding-bottom: 10%;
     }
 
     .contato li a p {
